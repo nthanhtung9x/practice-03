@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/practice-03/static/css/main.dacf8710.chunk.css",
+    "main.js": "/practice-03/static/js/main.7d5421f1.chunk.js",
+    "main.js.map": "/practice-03/static/js/main.7d5421f1.chunk.js.map",
+    "runtime-main.js": "/practice-03/static/js/runtime-main.f91b7440.js",
+    "runtime-main.js.map": "/practice-03/static/js/runtime-main.f91b7440.js.map",
+    "static/js/2.98c9376d.chunk.js": "/practice-03/static/js/2.98c9376d.chunk.js",
+    "static/js/2.98c9376d.chunk.js.map": "/practice-03/static/js/2.98c9376d.chunk.js.map",
+    "index.html": "/practice-03/index.html",
+    "precache-manifest.a22c14d524cb0d37def92e481496df1e.js": "/practice-03/precache-manifest.a22c14d524cb0d37def92e481496df1e.js",
+    "service-worker.js": "/practice-03/service-worker.js",
+    "static/css/main.dacf8710.chunk.css.map": "/practice-03/static/css/main.dacf8710.chunk.css.map",
+    "static/js/2.98c9376d.chunk.js.LICENSE.txt": "/practice-03/static/js/2.98c9376d.chunk.js.LICENSE.txt",
+    "static/media/audio.svg": "/practice-03/static/media/audio.30498c86.svg",
+    "static/media/cart.svg": "/practice-03/static/media/cart.f8469cbb.svg",
+    "static/media/laptop.svg": "/practice-03/static/media/laptop.262e7e7e.svg",
+    "static/media/left-arrow.svg": "/practice-03/static/media/left-arrow.6867dc1d.svg",
+    "static/media/logo.png": "/practice-03/static/media/logo.224f1fb6.png",
+    "static/media/menu.svg": "/practice-03/static/media/menu.4aaf92d0.svg",
+    "static/media/phone.svg": "/practice-03/static/media/phone.776eda91.svg",
+    "static/media/right-arrow.svg": "/practice-03/static/media/right-arrow.445abfc5.svg",
+    "static/media/search.svg": "/practice-03/static/media/search.61913e2b.svg",
+    "static/media/slide1.png": "/practice-03/static/media/slide1.09457781.png",
+    "static/media/slide2.png": "/practice-03/static/media/slide2.06fee60a.png",
+    "static/media/slide3.png": "/practice-03/static/media/slide3.f90cc726.png",
+    "static/media/smart-watch.svg": "/practice-03/static/media/smart-watch.cb19f062.svg",
+    "static/media/tablet.svg": "/practice-03/static/media/tablet.b65aed67.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f91b7440.js",
+    "static/js/2.98c9376d.chunk.js",
+    "static/css/main.dacf8710.chunk.css",
+    "static/js/main.7d5421f1.chunk.js"
+  ]
+}
