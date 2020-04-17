@@ -20,7 +20,7 @@ class Products extends Component {
         let { list } = this.props;
         let url = this.props.match.url;
         let result = null;
-		if(url === '/practice-03'){
+		if(url === '/practice-03/'){
 			result = list.map((item, index) => {
             return <div className="col l-2-4 m-4 c-6" key={index}>
                         <div className="product">

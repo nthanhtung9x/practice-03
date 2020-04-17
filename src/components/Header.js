@@ -145,7 +145,7 @@ class Header extends Component {
                         <div className="row sm-gutter">
                             <div className="col sm-gutter l-4 m-12 c-10">
                                 <div className="header__control">
-                                    <NavLink activeClassName="nav-active" to="/practice-03" exact>
+                                    <NavLink activeClassName="nav-active" to="/practice-03/" exact>
                                         <img src={logo} alt="logo"></img>
                                     </NavLink>
                                     <div className="search">
