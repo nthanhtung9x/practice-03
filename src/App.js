@@ -19,7 +19,7 @@ import * as actions from './actions/index';
 class App extends Component {
 
 
-  componentWillMount = () => {
+  componentDidMount = () => {
     this.props.onAllData();
   }
 

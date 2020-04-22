@@ -2,8 +2,8 @@ import * as types from '../constants/actionTypes';
 import callApi from '../utils/apiCaller';
 
 export const getApiProducts = () => {
-    return (dispatch) => {
-        return callApi('products','GET',null).then(res => {
+    return async(dispatch) => {
+        return await callApi('products','GET',null).then(res => {
             dispatch(listAll(res.data));
         });
     }
