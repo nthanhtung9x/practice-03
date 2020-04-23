@@ -17,23 +17,9 @@ import { connect } from 'react-redux';
 import * as actions from './actions/index';
 
 class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      isLoading: false
-    }
-  }
 
   componentDidMount = () => {
     this.props.onAllData();
-  }
-
-  componentWillMount = () => {
-    if(this.props.list){
-      this.setState({
-        isLoading:true
-      })
-    }
   }
 
   showContentMenu = (routes) => {
@@ -58,18 +44,12 @@ class App extends Component {
         <div className="wrapper">
           <Header />
           <Switch>
-            {this.state.isLoading ? this.showContentMenu(routes) : ''}
+            {this.showContentMenu(routes)}
           </Switch>
           <Footer />
         </div>
       </Router>
     );
-  }
-}
-
-const mapStateToProps = (state) => {
-  return {
-    list : state.products
   }
 }
 
@@ -81,6 +61,6 @@ const mapDispatchToProps = (dispatch,props) => {
   }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(App);
+export default connect(null,mapDispatchToProps)(App);
 
 // export default App;
