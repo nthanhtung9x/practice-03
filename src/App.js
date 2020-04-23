@@ -17,8 +17,7 @@ import { connect } from 'react-redux';
 import * as actions from './actions/index';
 
 class App extends Component {
-
-
+  
   componentDidMount = () => {
     this.props.onAllData();
   }

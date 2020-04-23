@@ -6,6 +6,7 @@ import Cart from './components/Cart';
 
 
 
+// eslint-disable-next-line no-sparse-arrays
 const routes = [
     {
         path: '/practice-03/',
