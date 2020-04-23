@@ -26,9 +26,14 @@ class App extends Component {
 
   componentDidMount = () => {
     this.props.onAllData();
-    this.setState({
-      isLoading:true
-    })
+  }
+
+  componentWillMount = () => {
+    if(this.props.list){
+      this.setState({
+        isLoading:true
+      })
+    }
   }
 
   showContentMenu = (routes) => {
@@ -62,6 +67,12 @@ class App extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    list : state.products
+  }
+}
+
 const mapDispatchToProps = (dispatch,props) => {
   return {
       onAllData: () => {
@@ -70,6 +81,6 @@ const mapDispatchToProps = (dispatch,props) => {
   }
 }
 
-export default connect(null,mapDispatchToProps)(App);
+export default connect(mapStateToProps,mapDispatchToProps)(App);
 
 // export default App;
