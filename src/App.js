@@ -17,9 +17,18 @@ import { connect } from 'react-redux';
 import * as actions from './actions/index';
 
 class App extends Component {
-  
+  constructor(props){
+    super(props);
+    this.state = {
+      isLoading: false
+    }
+  }
+
   componentDidMount = () => {
     this.props.onAllData();
+    this.setState({
+      isLoading:true
+    })
   }
 
   showContentMenu = (routes) => {
@@ -44,7 +53,7 @@ class App extends Component {
         <div className="wrapper">
           <Header />
           <Switch>
-            {this.showContentMenu(routes)}
+            {this.state.isLoading ? this.showContentMenu(routes) : ''}
           </Switch>
           <Footer />
         </div>
