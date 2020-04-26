@@ -252,6 +252,23 @@ $bg-main: #fed700;
         }
     }
 
+    .navigation {
+        text-align: center;
+        padding: 12px;
+        .navigation__btn {
+            padding: 8px 32px;
+            font-size: 1.8rem;
+            color: #007BFF;
+            background: transparent;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            &:hover {
+                color:#fff;
+                background:#007BFF;
+            }
+        }
+    }
+
     .cart {
         min-height: 40rem;
         overflow: hidden;

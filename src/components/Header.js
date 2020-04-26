@@ -13,6 +13,8 @@ import menu from '../images/menu.svg';
 import { connect } from 'react-redux';
 import { NavLink } from "react-router-dom";
 
+import * as actions from '../actions/index';
+
 const menus = [
     {
         name: 'ĐIỆN THOẠI',
@@ -97,6 +99,10 @@ class Header extends Component {
         })
     }
 
+    onChangeNavigation = (count) => {
+        this.props.onChangeNavigation(count);
+    }
+
     render() {
         let { keyword,displayForm } = this.state;
         let { searchProduct, list } = this.props;
@@ -130,7 +136,7 @@ class Header extends Component {
         if (menus.length > 0) {
             result = menus.map((item, index) => {
                 return <li className="nav__item" key={index} onClick={this.hiddenList}>
-                    <NavLink activeClassName={item.active} to={item.to} className="nav__link" exact={item.exact}>
+                    <NavLink activeClassName={item.active} to={item.to} className="nav__link" exact={item.exact} onClick={() => this.onChangeNavigation(-10)}>
                         <img src={item.icon} alt={item.name}></img>
                         <span>{item.count}</span>
                         <p>{item.name}</p>
@@ -145,7 +151,7 @@ class Header extends Component {
                         <div className="row sm-gutter">
                             <div className="col sm-gutter l-4 m-12 c-10">
                                 <div className="header__control">
-                                    <NavLink activeClassName="nav-active" to="/practice-03/" exact>
+                                    <NavLink activeClassName="nav-active" to="/practice-03/" exact  onClick={() => this.onChangeNavigation(-10)}>
                                         <img src={logo} alt="logo"></img>
                                     </NavLink>
                                     <div className="search">
@@ -204,6 +210,12 @@ const mapStateToProps = state => {
     }
 }
 
+const mapDispatchToProps = (dispatch, props) => {
+    return {
+        onChangeNavigation: (count) => {
+            dispatch(actions.changeNavition(count));
+        }
+    }
+}
 
-
-export default connect(mapStateToProps, null)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

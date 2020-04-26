@@ -37,3 +37,10 @@ export const donePurchase = (cart) => {
         cart
     }
 }
+
+export const changeNavition = (countItem) => {
+    return {
+        type:types.CHANGE_NAVIGATION,
+        countItem
+    }
+}
