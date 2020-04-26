@@ -6,7 +6,7 @@ var inititalState = [];
 var myReducer = (state = inititalState, action) => {
     switch(action.type) {
         case types.LIST_ALL:{
-            state = action.list[0]['products'];
+            state = action.list['products'];
             return [...state];
         }
         case types.DONE__PURCHASE:{
