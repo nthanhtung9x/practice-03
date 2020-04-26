@@ -10,7 +10,7 @@ import Cart from './components/Cart';
 // eslint-disable-next-line no-sparse-arrays
 const routes = [
     {
-        path: '/practice-03/',
+        path: '/practice-03',
         exact: true,
         main: ({match}) => [<Slide/>,<Products match={match}/>,<Navigation/>]
     },
